@@ -46,7 +46,10 @@ int main()
     if (shapeDrawer)
     {
         shapeDrawer->draw();
+        delete shapeDrawer;
     }
-    delete shapeDrawer;
+    else {
+    cout << "No valid shape selected." << endl;
+}
 }
 #endif
