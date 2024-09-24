@@ -3,10 +3,7 @@
 class Draw
 {
 public:
-    void draw()
-    {
-        drawShape();
-    }
+    
 
     virtual void drawShape() = 0;
 };

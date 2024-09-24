@@ -45,7 +45,7 @@ int main()
     }
     if (shapeDrawer)
     {
-        shapeDrawer->draw();
+        shapeDrawer->drawShape();
         delete shapeDrawer;
     }
     else {
