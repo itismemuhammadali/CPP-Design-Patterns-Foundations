@@ -1,5 +1,5 @@
-#ifndef Draw_H
-#define Draw_H
+#ifndef Draw_cpp
+#define Draw_cpp
 class Draw
 {
 public:

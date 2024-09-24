@@ -1,5 +1,5 @@
-#ifndef Main1_H
-#define Main1_H
+#ifndef Main1_cpp
+#define Main1_cpp
 #include<iostream>
 #include "Draw.cpp"
 #include "Enum.cpp"
