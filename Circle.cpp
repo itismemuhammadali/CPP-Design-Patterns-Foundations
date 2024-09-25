@@ -1,5 +1,5 @@
-#ifndef Circle_H
-#define Circle_H
+#ifndef Circle_cpp
+#define Circle_cpp
 #include <iostream>
 #include "Draw.cpp"
 using namespace std;

@@ -1,5 +1,5 @@
-#ifndef Rectangle_H
-#define Rectangle_H
+#ifndef Rectangle_cpp
+#define Rectangle_cpp
 #include <iostream>
 #include "Draw.cpp"
 using namespace std;

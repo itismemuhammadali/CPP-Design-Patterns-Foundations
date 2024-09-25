@@ -1,5 +1,5 @@
-#ifndef Main1_H
-#define Main1_H
+#ifndef Main1_cpp
+#define Main1_cpp
 #include<iostream>
 #include "Draw.cpp"
 #include "Enum.cpp"
@@ -46,7 +46,10 @@ int main()
     if (shapeDrawer)
     {
         shapeDrawer->draw();
+        delete shapeDrawer;
     }
-    delete shapeDrawer;
+    else {
+    cout << "No valid shape selected." << endl;
+}
 }
 #endif
