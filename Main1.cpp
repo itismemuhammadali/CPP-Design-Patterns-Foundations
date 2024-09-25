@@ -34,6 +34,7 @@ int main()
     {
         shapeDrawer = new Circle();
     }
+    break;
     case INVALID:
     {
         cout<<"invalid input"<<endl;
@@ -42,8 +43,10 @@ int main()
     default:
         break;
     }
-    shapeDrawer->draw();
-    
-    
+    if (shapeDrawer)
+    {
+        shapeDrawer->draw();
+    }
+    delete shapeDrawer;
 }
 #endif
