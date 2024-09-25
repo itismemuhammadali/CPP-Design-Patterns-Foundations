@@ -16,5 +16,3 @@
 # Ignore temporary files
 *.tmp
 
-# Ignore .gitignore file
-*..gitignore
