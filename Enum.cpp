@@ -1,5 +1,5 @@
-#ifndef Enum_H
-#define Enum_H
+#ifndef Enum_cpp
+#define Enum_cpp
 #include <iostream>
 #include "Square.cpp"
 #include "Rectangle.cpp"

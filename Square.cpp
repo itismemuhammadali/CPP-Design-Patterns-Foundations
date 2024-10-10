@@ -1,5 +1,5 @@
-#ifndef Square_H
-#define Square_H
+#ifndef Square_cpp
+#define Square_cpp
 #include <iostream>
 #include "Draw.cpp"
 using namespace std;
