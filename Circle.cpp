@@ -6,7 +6,7 @@ using namespace std;
 class Circle : public Draw
 {
 public:
-    void drawShape()
+    void drawShape() override
     {
         cout << "circle" << endl;
     }
