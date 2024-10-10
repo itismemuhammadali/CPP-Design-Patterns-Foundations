@@ -7,7 +7,7 @@ using namespace std;
 class Square : public Draw
 {
 public:
-    void drawShape()
+    void drawShape() override
     {
         cout << "square" << endl;
     }

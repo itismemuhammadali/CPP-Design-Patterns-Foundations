@@ -6,6 +6,7 @@
 #include "Square.cpp"
 #include "Rectangle.cpp"
 #include "Circle.cpp"
+#include "ShapeFactory.cpp"
 
 using namespace std;
 
@@ -16,33 +17,8 @@ int main()
     cout << "Enter a Shape" << endl;
     cin >> shape;
 
-    Draw* shapeDrawer = NULL;
+    Draw* shapeDrawer = ShapeFactory :: selectShape(shape);
 
-    switch (fromStringtoEnum(shape))
-    {
-    case SQUARE:
-    {
-        shapeDrawer = new Square();
-    }
-    break;
-    case RECTANGLE:
-    {
-        shapeDrawer = new Rectangle();
-    }
-    break;
-    case CIRCLE:
-    {
-        shapeDrawer = new Circle();
-    }
-    break;
-    case INVALID:
-    {
-        cout<<"invalid input"<<endl;
-    }
-    break;
-    default:
-        break;
-    }
     if (shapeDrawer)
     {
         shapeDrawer->draw();
