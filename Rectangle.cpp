@@ -1,15 +1,17 @@
 #ifndef Rectangle_cpp
 #define Rectangle_cpp
 #include <iostream>
-#include "Draw.cpp"
+#include "Shape.cpp"
+#include "Area.cpp"
 using namespace std;
 
-class Rectangle : public Draw
+class Rectangle : public Shape
 {
 public:
     void drawShape() override
     {
         cout << "rectangle" << endl;
+        CaculateRectangleArea();
     }
 };
 #endif

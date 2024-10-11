@@ -1,10 +1,8 @@
-#ifndef Draw_cpp
-#define Draw_cpp
-class Draw
+#ifndef Shape_cpp
+#define Shape_cpp
+class Shape
 {
 public:
-    
-
     virtual void drawShape() = 0;
 };
 #endif

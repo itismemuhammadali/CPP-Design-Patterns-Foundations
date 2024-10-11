@@ -1,7 +1,7 @@
 #ifndef Main1_cpp
 #define Main1_cpp
 #include<iostream>
-#include "Draw.cpp"
+#include "Shape.cpp"
 #include "Enum.cpp"
 #include "Square.cpp"
 #include "Rectangle.cpp"
@@ -17,7 +17,7 @@ int main()
     cout << "Enter a Shape" << endl;
     cin >> shape;
 
-    Draw* shapeDrawer = ShapeFactory :: selectShape(shape);
+    Shape* shapeDrawer = ShapeFactory :: selectShape(shape);
 
     if (shapeDrawer)
     {
