@@ -1,6 +1,8 @@
 #ifndef Shape_cpp
 #define Shape_cpp
-class Shape
+#include "Area.cpp"
+
+class Shape : public Area
 {
 public:
     virtual void drawShape() = 0;

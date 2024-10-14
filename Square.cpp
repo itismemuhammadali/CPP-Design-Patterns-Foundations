@@ -11,7 +11,19 @@ public:
     void drawShape() override
     {
         cout << "square" << endl;
-        CaculateSquareArea();
+    }
+
+    int inputAndCalculateArea() override
+    {
+        int length, width, area;
+        cout <<"Enter square dimensions" <<endl;
+        cout <<"Enter Length" <<endl;
+        cin >> length ;
+        cout <<"Enter Width" <<endl;
+        cin >> width ;
+        area = length*width;
+        cout << "Area = "  << area;
+        return 0;
     }
 };
 

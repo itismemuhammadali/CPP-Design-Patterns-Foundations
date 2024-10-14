@@ -7,6 +7,7 @@
 #include "Rectangle.cpp"
 #include "Circle.cpp"
 #include "ShapeFactory.cpp"
+#include "Area.cpp"
 
 using namespace std;
 
@@ -19,6 +20,8 @@ int main()
 
     Shape* shapeDrawer = ShapeFactory :: selectShape(shape);
 
+    int area = shapeDrawer -> inputAndCalculateArea();
+                           
     if (shapeDrawer)
     {
         shapeDrawer->drawShape();
@@ -26,6 +29,11 @@ int main()
     }
     else {
     cout << "No valid shape selected." << endl;
-}
+    }
+
+    
+   
+
+    
 }
 #endif
