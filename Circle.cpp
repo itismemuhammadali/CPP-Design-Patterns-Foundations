@@ -1,28 +1,37 @@
 #ifndef Circle_cpp
 #define Circle_cpp
 
+#define _USE_MATH_DEFINES
+
 #include <iostream>
+#include <math>
+
 #include "Shape.cpp"
 #include "Area.cpp"
+#include "Input.cpp"
 
 using namespace std;
-class Circle : public Shape
+class Circle : public Shape , public Input
 {
 public:
     void drawShape() override
     {
         cout << "circle" << endl; 
     }
-    int inputAndCalculateArea() override
+    int inputRadius() override 
     {
-        int Radius, area;
-        int PI = 3.14;
-        cout <<"Enter Circle Radius" <<endl;
-        cout <<"Enter Radius" <<endl;
-        cin >> Radius ;
-        area = PI*Radius*Radius;
-        cout << "Area = "  << area;
-        return 0;
+        int radius;
+        cout << "Enter Circle Radius" << endl;
+        cin >> radius;
+        return radius;
+    }
+    int CalculateArea() override
+    {
+        int radius = inputRadius ();
+        int area;
+        area = M_PI * radius * radius;
+        cout << "Area = " << area;
+        return area;
     }
 };
 #endif

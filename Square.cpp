@@ -1,11 +1,14 @@
 #ifndef Square_cpp
 #define Square_cpp
+
 #include <iostream>
 #include "Shape.cpp"
 #include "Area.cpp"
+#include "Input.cpp"
+
 using namespace std;
 
-class Square : public Shape
+class Square : public Shape , public Input
 {
 public:
     void drawShape() override
@@ -13,17 +16,21 @@ public:
         cout << "square" << endl;
     }
 
-    int inputAndCalculateArea() override
+    int inputLength() override 
     {
-        int length, width, area;
-        cout <<"Enter square dimensions" <<endl;
-        cout <<"Enter Length" <<endl;
-        cin >> length ;
-        cout <<"Enter Width" <<endl;
-        cin >> width ;
-        area = length*width;
-        cout << "Area = "  << area;
-        return 0;
+        int length;
+        cout << "Enter Length" << endl;
+        cin >> length;
+        return length;
+    }
+    int CalculateArea() override
+    {
+        int length = inputLength ();
+        int width = inputLength ();
+        int area;
+        area = length * width;
+        cout << "Area = " << area;
+        return area;
     }
 };
 

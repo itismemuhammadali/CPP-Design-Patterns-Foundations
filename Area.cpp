@@ -3,12 +3,13 @@
 
 #include <iostream>
 
+
 using namespace std;
 
 class Area
 {
 public:
-    virtual int inputAndCalculateArea() = 0;
+    virtual int CalculateArea() = 0;
 };
 
 #endif

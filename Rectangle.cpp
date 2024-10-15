@@ -4,27 +4,39 @@
 #include <iostream>
 #include "Shape.cpp"
 #include "Area.cpp"
+#include "Input.cpp"
 
 using namespace std;
 
-class Rectangle : public Shape
+class Rectangle : public Shape , public Input
 {
 public:
     void drawShape() override
     {
         cout << "rectangle" << endl;
     }
-    int inputAndCalculateArea() override
+    int inputLength() override 
     {
-        int length, width, area;
-        cout << "Enter Rectangle Dimensions" << endl;
+        int length;
         cout << "Enter Length" << endl;
         cin >> length;
+        return length;
+    }
+    int inputWidth() override 
+    {
+        int width;
         cout << "Enter Width" << endl;
         cin >> width;
+         return width;
+    }
+    int CalculateArea() override
+    {
+        int length = inputLength ();
+        int width = inputWidth ();
+        int area;
         area = length * width;
         cout << "Area = " << area;
-        return 0;
+        return area;
     }
 };
 #endif
