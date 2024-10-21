@@ -1,15 +1,10 @@
 #ifndef Area_cpp
 #define Area_cpp
 
-#include <iostream>
-
-
-using namespace std;
-
 class Area
 {
 public:
-    virtual int CalculateArea() = 0;
+    virtual int calculateArea() = 0;
 };
 
 #endif

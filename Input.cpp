@@ -8,8 +8,26 @@ using namespace std;
 class Input 
 {
 public:
-    virtual int inputLength() = 0;
-    virtual int inputWidth() = 0;
-    virtual int inputRadius() = 0;
+    int inputLength() 
+    {
+        int length;
+        cout << "Enter Length" << endl;
+        cin >> length;
+        return length;
+    };
+    int inputWidth() 
+    {
+        int width;
+        cout << "Enter Width" << endl;
+        cin >> width;
+        return width;
+    };
+    int inputRadius() 
+    {
+        int radius;
+        cout << "Enter Circle Radius" << endl;
+        cin >> radius;
+        return radius;
+    };
 };
 #endif

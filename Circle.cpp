@@ -4,7 +4,7 @@
 #define _USE_MATH_DEFINES
 
 #include <iostream>
-#include <math>
+#include <math.h>
 
 #include "Shape.cpp"
 #include "Area.cpp"
@@ -18,17 +18,10 @@ public:
     {
         cout << "circle" << endl; 
     }
-    int inputRadius() override 
-    {
-        int radius;
-        cout << "Enter Circle Radius" << endl;
-        cin >> radius;
-        return radius;
-    }
-    int CalculateArea() override
+    int calculateArea() override
     {
         int radius = inputRadius ();
-        int area;
+        int area ;
         area = M_PI * radius * radius;
         cout << "Area = " << area;
         return area;

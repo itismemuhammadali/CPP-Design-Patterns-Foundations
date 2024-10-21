@@ -20,7 +20,7 @@ int main()
 
     Shape *shapeDrawer = ShapeFactory ::selectShape(shape);
 
-    int area = shapeDrawer->CalculateArea();
+    int area = shapeDrawer->calculateArea();
 
     if (shapeDrawer)
     {
