@@ -13,17 +13,20 @@
 using namespace std;
 class Circle : public Shape , public Input
 {
-public:
-    void drawShape() override
-    {
-        cout << "circle" << endl; 
-    }
+    private:
+        int radius = inputRadius ();
+        double area;
+
+    public:
+        void drawShape() override
+            {
+                cout << "circle" << endl; 
+            }
+
     int calculateArea() override
     {
-        int radius = inputRadius ();
-        int area ;
         area = M_PI * radius * radius;
-        cout << "Area = " << area;
+        cout << "Area: " << area;
         return area;
     }
 };

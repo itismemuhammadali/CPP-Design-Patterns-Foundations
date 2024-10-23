@@ -18,13 +18,12 @@ int main()
     cout << "Enter a Shape" << endl;
     cin >> shape;
 
-    Shape *shapeDrawer = ShapeFactory ::selectShape(shape);
-
-    int area = shapeDrawer->calculateArea();
+    Shape *shapeDrawer = ShapeFactory :: create(shape);
 
     if (shapeDrawer)
     {
         shapeDrawer->drawShape();
+        shapeDrawer->calculateArea();
         delete shapeDrawer;
     }
     else

@@ -11,7 +11,7 @@ using namespace std;
 
 class ShapeFactory {
     
-    public: static Shape* selectShape(string shape)
+    public: static Shape* create(string shape)
     {
         Shape* shapeDrawer = nullptr;
         

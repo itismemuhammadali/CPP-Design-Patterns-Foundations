@@ -10,19 +10,21 @@ using namespace std;
 
 class Rectangle :  public Shape , public Input
 {
-public:
-    void drawShape() override
-    {
-        cout << "rectangle" << endl;
-    }
-    int calculateArea() override
-    {
+    private:
         int length = inputLength ();
         int width = inputWidth ();
         int area;
-        area = length * width;
-        cout << "Area = " << area;
-        return area;
-    }
+
+    public:
+        void drawShape() override
+        {
+            cout << "rectangle" << endl;
+        }
+        int calculateArea() override
+        {
+            area = length * width;
+            
+            return area;
+        }
 };
 #endif
