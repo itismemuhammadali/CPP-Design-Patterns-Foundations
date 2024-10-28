@@ -8,6 +8,6 @@ using namespace std;
 class Input
 {
 public:
-    virtual double input() = 0;
+    virtual void input() = 0;
 };
 #endif

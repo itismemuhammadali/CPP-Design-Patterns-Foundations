@@ -11,26 +11,28 @@ using namespace std;
 class Square : public Shape, public Input
 {
     private:
-        double length = input();
+        double length;
         double area;
 
     public:
+        Square()
+        {
+            input();
+        }
         void drawShape() override
         {
             cout << "square" << endl;
         }
 
-        double input() override
+        void input() override
         {
             cout << "Enter Length" << endl;
             cin >> length;
-            return length;
         };
 
         double calculateArea() override
         {
-            area = 2 * length;
-            cout << "Area : " << area;
+            area = length * length;
             return area;
         }
 };

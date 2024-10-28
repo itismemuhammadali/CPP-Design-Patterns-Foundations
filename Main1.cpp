@@ -19,11 +19,11 @@ int main()
     cin >> shape;
 
     Shape *shapeDrawer = ShapeFactory ::create(shape);
-
+    int area = shapeDrawer->calculateArea();
     if (shapeDrawer)
     {
         shapeDrawer->drawShape();
-        shapeDrawer->calculateArea();
+        cout << "Area : " << area;
         delete shapeDrawer;
     }
     else
