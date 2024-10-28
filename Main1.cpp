@@ -8,6 +8,7 @@
 #include "Circle.cpp"
 #include "ShapeFactory.cpp"
 #include "Area.cpp"
+#include "Input.cpp"
 
 using namespace std;
 
@@ -19,7 +20,9 @@ int main()
     cin >> shape;
 
     Shape *shapeDrawer = ShapeFactory ::create(shape);
-    int area = shapeDrawer->calculateArea();
+    shapeDrawer->input();
+    double area = shapeDrawer->calculateArea();
+
     if (shapeDrawer)
     {
         shapeDrawer->drawShape();

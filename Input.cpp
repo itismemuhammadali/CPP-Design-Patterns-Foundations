@@ -5,7 +5,7 @@
 
 using namespace std;
 
-class Input
+class Input 
 {
 public:
     virtual void input() = 0;

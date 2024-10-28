@@ -11,7 +11,7 @@
 #include "Input.cpp"
 
 using namespace std;
-class Circle : public Shape, public Input
+class Circle : public Shape
 {
 
     private:
@@ -19,10 +19,7 @@ class Circle : public Shape, public Input
         double area;
 
     public:
-        Circle()
-        {
-            input();
-        }
+        
         void drawShape() override
         {
             cout << "circle" << endl;
@@ -32,7 +29,7 @@ class Circle : public Shape, public Input
         {
             cout << "Enter Circle Radius" << endl;
             cin >> radius;
-        };
+        }
 
         double calculateArea() override
         {

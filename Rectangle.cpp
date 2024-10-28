@@ -8,17 +8,14 @@
 
 using namespace std;
 
-class Rectangle : public Shape, public Input
+class Rectangle : public Shape
 {
     private:
         double length;
         double width;
 
     public:
-        Rectangle()
-        {
-            input();
-        }
+        
         void drawShape() override
         {
             cout << "rectangle" << endl;

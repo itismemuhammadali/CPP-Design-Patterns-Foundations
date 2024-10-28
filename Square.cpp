@@ -8,17 +8,14 @@
 
 using namespace std;
 
-class Square : public Shape, public Input
+class Square : public Shape
 {
     private:
         double length;
         double area;
 
     public:
-        Square()
-        {
-            input();
-        }
+
         void drawShape() override
         {
             cout << "square" << endl;
@@ -28,7 +25,7 @@ class Square : public Shape, public Input
         {
             cout << "Enter Length" << endl;
             cin >> length;
-        };
+        }
 
         double calculateArea() override
         {
