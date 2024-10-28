@@ -8,22 +8,40 @@
 
 using namespace std;
 
-class Rectangle :  public Shape , public Input
+class Rectangle : public Shape, public Input
 {
     private:
-        int length = inputLength ();
-        int width = inputWidth ();
-        int area;
+        double length = input();
+        double width = input();
 
     public:
         void drawShape() override
         {
             cout << "rectangle" << endl;
         }
-        int calculateArea() override
+
+        double input() override
         {
+            if (length>0)
+            {
+                cout << "Enter Length" << endl;
+                cin >> length;
+                return length;
+            }
+            else
+            {
+                cout << "Enter Width" << endl;
+                cin >> width;
+                return width;
+            }
+            return 0;
+        }
+
+        double calculateArea() override
+        {
+            double area;
             area = length * width;
-            
+            cout << "Area : " << area;
             return area;
         }
 };

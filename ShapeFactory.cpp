@@ -9,37 +9,37 @@
 
 using namespace std;
 
-class ShapeFactory {
-    
-    public: static Shape* create(string shape)
+class ShapeFactory
+{
+
+public:
+    static Shape *create(string shape)
     {
-        Shape* shapeDrawer = nullptr;
-        
+        Shape *shapeDrawer = nullptr;
+
         switch (fromStringtoEnum(shape))
         {
-            case SQUARE:
-                shapeDrawer = new Square();
+        case SQUARE:
+            shapeDrawer = new Square();
             break;
 
-            case RECTANGLE:
-                shapeDrawer = new Rectangle();
+        case RECTANGLE:
+            shapeDrawer = new Rectangle();
             break;
 
-            case CIRCLE:
-                shapeDrawer = new Circle();
+        case CIRCLE:
+            shapeDrawer = new Circle();
             break;
 
-            case INVALID:
-                cout << "Invalid shape input." << endl;
+        case INVALID:
+            cout << "Invalid shape input." << endl;
             break;
 
-            default:
+        default:
             break;
+        }
 
-            }
-
-            return shapeDrawer;
-            
-            }
+        return shapeDrawer;
+    }
 };
 #endif

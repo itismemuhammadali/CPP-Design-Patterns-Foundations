@@ -8,25 +8,31 @@
 
 using namespace std;
 
-class Square :  public Shape , public Input
+class Square : public Shape, public Input
 {
     private:
-        int length = inputLength ();
-        int width = inputLength ();
-        int area;
-        
+        double length = input();
+        double area;
+
     public:
         void drawShape() override
-            {
-                cout << "square" << endl;
-            }
-     
-    int calculateArea() override
-    {
-        area = length * width;
-        cout << "Area : " << area;
-        return area;
-    }
+        {
+            cout << "square" << endl;
+        }
+
+        double input() override
+        {
+            cout << "Enter Length" << endl;
+            cin >> length;
+            return length;
+        };
+
+        double calculateArea() override
+        {
+            area = 2 * length;
+            cout << "Area : " << area;
+            return area;
+        }
 };
 
 #endif

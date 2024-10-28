@@ -11,23 +11,32 @@
 #include "Input.cpp"
 
 using namespace std;
-class Circle : public Shape , public Input
+class Circle : public Shape, public Input
 {
+
     private:
-        int radius = inputRadius ();
+        double radius = input();
         double area;
 
     public:
+        
         void drawShape() override
-            {
-                cout << "circle" << endl; 
-            }
+        {
+            cout << "circle" << endl;
+        }
 
-    int calculateArea() override
-    {
-        area = M_PI * radius * radius;
-        cout << "Area: " << area;
-        return area;
-    }
+        double input() override
+        {
+            cout << "Enter Circle Radius" << endl;
+            cin >> radius;
+            return radius;
+        };
+
+        double calculateArea() override
+        {
+            area = M_PI * radius * radius;
+            cout << "Area: " << area;
+            return area;
+        }
 };
 #endif

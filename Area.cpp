@@ -4,7 +4,7 @@
 class Area
 {
 public:
-    virtual int calculateArea() = 0;
+    virtual double calculateArea() = 0;
 };
 
 #endif

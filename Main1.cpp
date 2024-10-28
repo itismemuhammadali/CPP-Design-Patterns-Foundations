@@ -18,7 +18,7 @@ int main()
     cout << "Enter a Shape" << endl;
     cin >> shape;
 
-    Shape *shapeDrawer = ShapeFactory :: create(shape);
+    Shape *shapeDrawer = ShapeFactory ::create(shape);
 
     if (shapeDrawer)
     {

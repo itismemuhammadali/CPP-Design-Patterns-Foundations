@@ -6,19 +6,25 @@
 #include "Circle.cpp"
 
 using namespace std;
-enum Shapes { SQUARE, RECTANGLE, CIRCLE, INVALID };
+enum Shapes
+{
+    SQUARE,
+    RECTANGLE,
+    CIRCLE,
+    INVALID
+};
 
 Shapes fromStringtoEnum(string shape)
 {
-    if(shape=="square")
+    if (shape == "square")
     {
         return SQUARE;
     }
-    else if(shape=="rectangle")
+    else if (shape == "rectangle")
     {
         return RECTANGLE;
     }
-    else if (shape=="circle")
+    else if (shape == "circle")
     {
         return CIRCLE;
     }
