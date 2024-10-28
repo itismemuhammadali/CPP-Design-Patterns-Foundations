@@ -2,37 +2,44 @@
 #define ShapeFactory_H
 #include <iostream>
 #include "Enum.cpp"
-#include "Draw.cpp"
+#include "Shape.cpp"
 #include "Square.cpp"
 #include "Rectangle.cpp"
 #include "Circle.cpp"
 
 using namespace std;
 
-class ShapeFactory {
-    
-    public: static Draw* selectShape(string shape)
+class ShapeFactory
+{
+
+public:
+    static Shape *create(string shape)
     {
-        Draw* shapeDrawer = nullptr;
-        
+        Shape *shapeDrawer = nullptr;
+
         switch (fromStringtoEnum(shape))
         {
-            case SQUARE:
+        case SQUARE:
             shapeDrawer = new Square();
             break;
-            case RECTANGLE:
+
+        case RECTANGLE:
             shapeDrawer = new Rectangle();
             break;
-            case CIRCLE:
+
+        case CIRCLE:
             shapeDrawer = new Circle();
             break;
-            case INVALID:
+
+        case INVALID:
             cout << "Invalid shape input." << endl;
             break;
-            default:
+
+        default:
             break;
-            }
-            return shapeDrawer;
-            }
+        }
+
+        return shapeDrawer;
+    }
 };
 #endif
