@@ -8,6 +8,7 @@
 #include "Circle.cpp"
 #include "ShapeFactory.cpp"
 #include "Area.cpp"
+#include "Volume.cpp"
 #include "Input.cpp"
 
 using namespace std;
@@ -21,12 +22,14 @@ int main()
 
     Shape *shapeDrawer = ShapeFactory ::create(shape);
     shapeDrawer->input();
+    double volume = shapeDrawer->calculateVolume();
     double area = shapeDrawer->calculateArea();
 
     if (shapeDrawer)
     {
         shapeDrawer->drawShape();
-        cout << "Area : " << area;
+        cout << "Area : " << area << "\n";
+        cout << "Volume : " << volume;
         delete shapeDrawer;
     }
     else

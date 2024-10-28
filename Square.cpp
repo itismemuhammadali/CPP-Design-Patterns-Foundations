@@ -4,6 +4,7 @@
 #include <iostream>
 #include "Shape.cpp"
 #include "Area.cpp"
+#include "Volume.cpp"
 #include "Input.cpp"
 
 using namespace std;
@@ -13,6 +14,7 @@ class Square : public Shape
     private:
         double length;
         double area;
+        double volume;
 
     public:
 
@@ -31,6 +33,13 @@ class Square : public Shape
         {
             area = length * length;
             return area;
+        }
+
+        
+        double calculateVolume() override
+        {
+            volume = length * length * length;
+            return volume;
         }
 };
 
