@@ -6,6 +6,7 @@
 #include "Square.cpp"
 #include "Rectangle.cpp"
 #include "Circle.cpp"
+#include "Triangle.cpp"
 #include "ShapeFactory.cpp"
 #include "Area.cpp"
 #include "Input.cpp"

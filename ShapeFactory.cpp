@@ -5,6 +5,7 @@
 #include "Shape.cpp"
 #include "Square.cpp"
 #include "Rectangle.cpp"
+#include "Triangle.cpp"
 #include "Circle.cpp"
 
 using namespace std;
@@ -29,6 +30,10 @@ public:
 
         case CIRCLE:
             shapeDrawer = new Circle();
+            break;
+
+        case TRIANGLE:
+            shapeDrawer = new Triangle();
             break;
 
         case INVALID:
