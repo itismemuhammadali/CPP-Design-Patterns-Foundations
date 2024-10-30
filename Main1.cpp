@@ -1,14 +1,8 @@
 #ifndef Main1_cpp
 #define Main1_cpp
 #include <iostream>
-#include "Shape.cpp"
-#include "Enum.cpp"
-#include "Square.cpp"
-#include "Rectangle.cpp"
-#include "Circle.cpp"
+
 #include "ShapeFactory.cpp"
-#include "Area.cpp"
-#include "Input.cpp"
 
 using namespace std;
 
@@ -21,12 +15,14 @@ int main()
 
     Shape *shapeDrawer = ShapeFactory ::create(shape);
     shapeDrawer->input();
+    double volume = shapeDrawer->calculateVolume();
     double area = shapeDrawer->calculateArea();
 
     if (shapeDrawer)
     {
         shapeDrawer->drawShape();
-        cout << "Area : " << area;
+        cout << "Area : " << area << "\n";
+        cout << "Volume : " << volume;
         delete shapeDrawer;
     }
     else

@@ -1,11 +1,14 @@
 #ifndef Enum_cpp
 #define Enum_cpp
+
 #include <iostream>
+
 #include "Square.cpp"
 #include "Rectangle.cpp"
 #include "Circle.cpp"
 
 using namespace std;
+
 enum Shapes
 {
     SQUARE,

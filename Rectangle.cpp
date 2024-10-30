@@ -4,6 +4,7 @@
 #include <iostream>
 #include "Shape.cpp"
 #include "Area.cpp"
+#include "Volume.cpp"
 #include "Input.cpp"
 
 using namespace std;
@@ -13,6 +14,10 @@ class Rectangle : public Shape
     private:
         double length;
         double width;
+        double height;
+
+        double area;
+        double volume;
 
     public:
         
@@ -27,13 +32,20 @@ class Rectangle : public Shape
             cin >> length;
             cout << "Enter Width" << endl;
             cin >> width;
+            cout << "Enter Height" << endl;
+            cin >> height;
         }
 
         double calculateArea() override
         {
-            double area;
             area = length * width;
             return area;
+        }
+
+        double calculateVolume() override
+        {
+            volume = length * width * height;
+            return volume;
         }
 };
 #endif
