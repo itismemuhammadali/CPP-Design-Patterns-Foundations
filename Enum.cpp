@@ -6,6 +6,7 @@
 #include "Square.cpp"
 #include "Rectangle.cpp"
 #include "Circle.cpp"
+#include "Triangle.cpp"
 
 using namespace std;
 
@@ -14,6 +15,7 @@ enum Shapes
     SQUARE,
     RECTANGLE,
     CIRCLE,
+    TRIANGLE,
     INVALID
 };
 
@@ -30,6 +32,10 @@ Shapes fromStringtoEnum(string shape)
     else if (shape == "circle")
     {
         return CIRCLE;
+    }
+    else if (shape == "triangle")
+    {
+        return TRIANGLE;
     }
     else
     {
