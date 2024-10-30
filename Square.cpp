@@ -13,6 +13,7 @@ class Square : public Shape
 {
     private:
         double length;
+        
         double area;
         double volume;
 

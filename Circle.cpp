@@ -18,8 +18,9 @@ class Circle : public Shape
 
     private:
         double radius;
-        double area;
         double height;
+        
+        double area;
         double volume;
 
     public:

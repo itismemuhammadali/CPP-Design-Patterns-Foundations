@@ -1,15 +1,8 @@
 #ifndef Main1_cpp
 #define Main1_cpp
 #include <iostream>
-#include "Shape.cpp"
-#include "Enum.cpp"
-#include "Square.cpp"
-#include "Rectangle.cpp"
-#include "Circle.cpp"
+
 #include "ShapeFactory.cpp"
-#include "Area.cpp"
-#include "Volume.cpp"
-#include "Input.cpp"
 
 using namespace std;
 

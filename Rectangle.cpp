@@ -15,8 +15,9 @@ class Rectangle : public Shape
         double length;
         double width;
         double height;
-        double volume;
+
         double area;
+        double volume;
 
     public:
         

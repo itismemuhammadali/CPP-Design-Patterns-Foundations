@@ -1,6 +1,8 @@
 #ifndef ShapeFactory_H
 #define ShapeFactory_H
+
 #include <iostream>
+
 #include "Enum.cpp"
 #include "Shape.cpp"
 #include "Square.cpp"
