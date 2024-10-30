@@ -14,6 +14,10 @@ class Triangle : public Shape
     private:
         double base;
         double height;
+        double length;
+
+        double area;
+        double volume;
 
     public:
         
@@ -28,13 +32,20 @@ class Triangle : public Shape
             cin >> base;
             cout << "Enter height" << endl;
             cin >> height;
+            cout << "Enter length" << endl;
+            cin >> length;
         }
 
         double calculateArea() override
         {
-            double area;
             area = (base * height)/2;
             return area;
+        }
+
+         double calculateVolume() override
+        {
+            volume = (base * height * length)/2;
+            return volume;
         }
 };
 #endif
