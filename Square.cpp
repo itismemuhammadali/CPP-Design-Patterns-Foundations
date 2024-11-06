@@ -24,7 +24,7 @@ class Square : public Shape
             cout << "square" << endl;
         }
 
-        void input() override
+        void inputDimensions() override
         {
             cout << "Enter Length" << endl;
             cin >> length;

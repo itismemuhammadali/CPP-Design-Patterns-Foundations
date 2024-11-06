@@ -26,7 +26,7 @@ class Triangle : public Shape
             cout << "triangle" << endl;
         }
 
-        void input() override
+        void inputDimensions() override
         {
             cout << "Enter base" << endl;
             cin >> base;

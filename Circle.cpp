@@ -30,7 +30,7 @@ class Circle : public Shape
             cout << "circle" << endl;
         }
 
-        void input() override
+        void inputDimensions() override
         {
             cout << "Enter Circle Radius" << endl;
             cin >> radius;

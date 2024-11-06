@@ -19,21 +19,21 @@ enum Shapes
     INVALID
 };
 
-Shapes fromStringtoEnum(string shape)
+Shapes fromStringtoEnum(string shapeType)
 {
-    if (shape == "square")
+    if (shapeType == "square")
     {
         return SQUARE;
     }
-    else if (shape == "rectangle")
+    else if (shapeType == "rectangle")
     {
         return RECTANGLE;
     }
-    else if (shape == "circle")
+    else if (shapeType == "circle")
     {
         return CIRCLE;
     }
-    else if (shape == "triangle")
+    else if (shapeType == "triangle")
     {
         return TRIANGLE;
     }

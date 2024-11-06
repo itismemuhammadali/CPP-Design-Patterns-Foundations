@@ -26,7 +26,7 @@ class Rectangle : public Shape
             cout << "rectangle" << endl;
         }
 
-        void input() override
+        void inputDimensions() override
         {
             cout << "Enter Length" << endl;
             cin >> length;
