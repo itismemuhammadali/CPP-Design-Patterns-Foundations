@@ -21,12 +21,12 @@ class Triangle : public Shape
 
     public:
         
-        void drawShape() override
+        void draw() override
         {
             cout << "triangle" << endl;
         }
 
-        void input() override
+        void inputDimensions() override
         {
             cout << "Enter base" << endl;
             cin >> base;

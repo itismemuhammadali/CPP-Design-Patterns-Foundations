@@ -9,19 +9,19 @@ using namespace std;
 
 int main()
 {
-    string shape;
+    string shapeType;
 
     cout << "Enter a Shape" << endl;
-    cin >> shape;
+    cin >> shapeType;
 
-    Shape *shapeDrawer = ShapeFactory ::create(shape);
-    shapeDrawer->input();
+    Shape *shapeDrawer = ShapeFactory ::create(shapeType);
+    shapeDrawer->inputDimensions();
     double volume = shapeDrawer->calculateVolume();
     double area = shapeDrawer->calculateArea();
 
     if (shapeDrawer)
     {
-        shapeDrawer->drawShape();
+        shapeDrawer->draw();
         cout << "Area : " << area << "\n";
         cout << "Volume : " << volume;
         delete shapeDrawer;

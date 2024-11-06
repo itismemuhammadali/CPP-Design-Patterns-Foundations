@@ -4,6 +4,6 @@
 class Input 
 {
 public:
-    virtual void input() = 0;
+    virtual void inputDimensions() = 0;
 };
 #endif

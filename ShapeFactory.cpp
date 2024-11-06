@@ -16,11 +16,11 @@ class ShapeFactory
 {
 
 public:
-    static Shape *create(string shape)
+    static Shape *create(string shapeType)
     {
         Shape *shapeDrawer = nullptr;
 
-        switch (fromStringtoEnum(shape))
+        switch (fromStringtoEnum(shapeType))
         {
         case SQUARE:
             shapeDrawer = new Square();

@@ -25,12 +25,12 @@ class Circle : public Shape
 
     public:
         
-        void drawShape() override
+        void draw() override
         {
             cout << "circle" << endl;
         }
 
-        void input() override
+        void inputDimensions() override
         {
             cout << "Enter Circle Radius" << endl;
             cin >> radius;
