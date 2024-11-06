@@ -21,7 +21,7 @@ int main()
 
     if (shapeDrawer)
     {
-        shapeDrawer->drawShape();
+        shapeDrawer->draw();
         cout << "Area : " << area << "\n";
         cout << "Volume : " << volume;
         delete shapeDrawer;

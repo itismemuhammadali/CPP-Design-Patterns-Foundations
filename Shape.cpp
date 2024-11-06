@@ -8,6 +8,6 @@
 class Shape : public Area ,public Volume, public Input
 {
 public:
-    virtual void drawShape() = 0;
+    virtual void draw() = 0;
 };
 #endif

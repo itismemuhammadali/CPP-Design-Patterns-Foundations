@@ -21,7 +21,7 @@ class Rectangle : public Shape
 
     public:
         
-        void drawShape() override
+        void draw() override
         {
             cout << "rectangle" << endl;
         }

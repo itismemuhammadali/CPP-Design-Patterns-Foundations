@@ -19,7 +19,7 @@ class Square : public Shape
 
     public:
 
-        void drawShape() override
+        void draw() override
         {
             cout << "square" << endl;
         }
