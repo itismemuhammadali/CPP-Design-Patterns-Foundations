@@ -2,14 +2,12 @@
 #define Rectangle_cpp
 
 #include <iostream>
-#include "Shape.cpp"
-#include "Area.cpp"
-#include "Volume.cpp"
-#include "Input.cpp"
+
+#include "ShapeManager.cpp"
 
 using namespace std;
 
-class Rectangle : public Shape
+class Rectangle : public ShapeManager // The Rectangle class follows 'S' of S.O.L.I.D
 {
     private:
         double length;

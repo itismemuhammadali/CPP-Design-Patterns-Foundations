@@ -3,13 +3,11 @@
 
 #include <iostream>
 
-#include "Shape.cpp"
-#include "Area.cpp"
-#include "Input.cpp"
+#include "ShapeManager.cpp"
 
 using namespace std;
 
-class Triangle : public Shape
+class Triangle : public ShapeManager    // The Triangle class follows 'S' of S.O.L.I.D
 {
     private:
         double base;

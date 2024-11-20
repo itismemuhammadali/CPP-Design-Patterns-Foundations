@@ -10,7 +10,7 @@
 
 using namespace std;
 
-enum Shapes
+enum Shapes 
 {
     SQUARE,
     RECTANGLE,
@@ -19,7 +19,7 @@ enum Shapes
     INVALID
 };
 
-Shapes fromStringtoEnum(string shapeType)
+Shapes fromStringtoEnum(string shapeType)   // The function fromStringtoEnum() follows 'S' of S.O.L.I.D
 {
     if (shapeType == "square")
     {

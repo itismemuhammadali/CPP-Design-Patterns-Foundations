@@ -6,14 +6,10 @@
 #include <iostream>
 #include <math.h>
 
-#include "Shape.cpp"
-#include "Area.cpp"
-#include "Volume.cpp"
-#include "Input.cpp"
-
+#include "ShapeManager.cpp"
 
 using namespace std;
-class Circle : public Shape
+class Circle : public ShapeManager // The Circle class follows 'S' of S.O.L.I.D
 {
 
     private:

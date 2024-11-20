@@ -2,14 +2,12 @@
 #define Square_cpp
 
 #include <iostream>
-#include "Shape.cpp"
-#include "Area.cpp"
-#include "Volume.cpp"
-#include "Input.cpp"
+
+#include "ShapeManager.cpp"
 
 using namespace std;
 
-class Square : public Shape
+class Square : public ShapeManager  // The Square class follows 'S' of S.O.L.I.D
 {
     private:
         double length;
