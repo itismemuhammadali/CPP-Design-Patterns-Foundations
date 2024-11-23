@@ -7,7 +7,10 @@
 
 using namespace std;
 
-class Triangle : public ShapeManager    // The Triangle class follows 'S' of S.O.L.I.D
+class Triangle : public ShapeManager   // This class doesnot follows the Single Responsibility Principle. 
+//This class overrides methods to "draw a Triangle" take "input" and then perform task to "calculate area" and "calculate volume".
+//I have suggestion that we create separate classes to override these methods.
+//For example a Triangle drawer class a Triangle input class and then a Triangle volume and a Triangle area.
 {
     private:
         double base;

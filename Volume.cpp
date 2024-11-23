@@ -1,7 +1,8 @@
 #ifndef Volume_cpp
 #define Volume_cpp
 
-class Volume    // The Volume class follows 'S' of S.O.L.I.D
+class Volume    // This class follows the Single Responsibility Principle. 
+//This class has a virtual method that is override by child classes to implement their own calculateVolume() method. 
 {
 public:
     virtual double calculateVolume() = 0;

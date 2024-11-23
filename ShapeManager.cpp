@@ -7,9 +7,9 @@
 #include "Shape.cpp"
 
 class ShapeManager : public Area, public Volume, public Input, public Shape 
-    // The ShapeManager class follows 'S' of S.O.L.I.D
+    // This class follows the Single Responsibility Principle. 
 {
-    //this class is extending from Area, Volume, Input and Shape
+    //This class is extending from Area, Volume, Input and Shape to link these classes to its child classes. 
 };
 
 #endif

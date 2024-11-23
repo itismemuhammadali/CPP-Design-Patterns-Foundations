@@ -12,7 +12,8 @@
 
 using namespace std;
 
-class ShapeFactory  // The ShapeFactory class follows 'S' of S.O.L.I.D
+class ShapeFactory  // This class follows the Single Responsibility Principle. 
+//This class has the responsibility to create a new object based on user input.
 {
 
 public:

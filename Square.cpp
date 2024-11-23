@@ -7,7 +7,10 @@
 
 using namespace std;
 
-class Square : public ShapeManager  // The Square class follows 'S' of S.O.L.I.D
+class Square : public ShapeManager  // This class doesnot follows the Single Responsibility Principle. 
+//This class overrides methods to "draw a Square" take "input" and then perform task to "calculate area" and "calculate volume".
+//I have suggestion that we create separate classes to override these methods.
+//For example a Square drawer class a Square input class and then a Square volume and a Square area.
 {
     private:
         double length;
