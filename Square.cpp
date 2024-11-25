@@ -3,13 +3,13 @@
 
 #include <iostream>
 
-#include "ShapeManager.cpp"
+#include "Shape.cpp"
 
 using namespace std;
 
-class Square : public ShapeManager  
-//Responsibility: This class is responsible to provide implementation for draw(), inputDimensions, calculateArea(), and calculateVolume().
-//This class doesnot follows the Single Responsibility Principle. 
+class Square : public Shape  
+//Responsibility: This class provides concrete implementation for abstract methods declared in abstract classes shape, Input, Area, and Volume.
+//This class doesnot follows the Single Responsibility Principle.  
 
 {
     private:

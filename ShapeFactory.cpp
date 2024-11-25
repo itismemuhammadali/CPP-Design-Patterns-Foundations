@@ -4,7 +4,7 @@
 #include <iostream>
 
 #include "Enum.cpp"
-#include "ShapeManager.cpp"
+#include "Shape.cpp"
 #include "Square.cpp"
 #include "Rectangle.cpp"
 #include "Triangle.cpp"
@@ -18,9 +18,9 @@ class ShapeFactory
 {
 
 public:
-    static ShapeManager *create(string shapeType)
+    static Shape *create(string shapeType)
     {
-        ShapeManager *shapeHandler = nullptr;
+        Shape *shapeHandler = nullptr;
 
         switch (fromStringtoEnum(shapeType))
         {

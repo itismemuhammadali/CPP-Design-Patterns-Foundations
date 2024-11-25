@@ -19,7 +19,7 @@ enum Shapes
     INVALID
 };
 
-Shapes fromStringtoEnum(string shapeType)   // The function fromStringtoEnum() follows Single responsibility principle.
+Shapes fromStringtoEnum(string shapeType)  
 {
     if (shapeType == "square")
     {

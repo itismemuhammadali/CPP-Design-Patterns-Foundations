@@ -6,11 +6,11 @@
 #include <iostream>
 #include <math.h>
 
-#include "ShapeManager.cpp"
+#include "Shape.cpp"
 
 using namespace std;
-class Circle : public ShapeManager  
-//Responsibility: This class is responsible to provide implementation for draw(), inputDimensions, calculateArea(), and calculateVolume().
+class Circle : public Shape
+//Responsibility: This class provides concrete implementation for abstract methods declared in abstract classes shape, Input, Area, and Volume.
 //This class doesnot follows the Single Responsibility Principle. 
 
 {

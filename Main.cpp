@@ -14,7 +14,7 @@ int main()
     cout << "Enter a Shape" << endl;
     cin >> shapeType;
 
-    ShapeManager *shapeHandler = ShapeFactory ::create(shapeType);
+    Shape *shapeHandler = ShapeFactory ::create(shapeType);
     
     if (shapeHandler)
     {
