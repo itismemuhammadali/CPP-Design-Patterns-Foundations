@@ -7,10 +7,9 @@
 
 using namespace std;
 
-class Triangle : public ShapeManager   // This class doesnot follows the Single Responsibility Principle. 
-//This class overrides methods to "draw a Triangle" take "input" and then perform task to "calculate area" and "calculate volume".
-//I have suggestion that we create separate classes to override these methods.
-//For example a Triangle drawer class a Triangle input class and then a Triangle volume and a Triangle area.
+class Triangle : public ShapeManager  
+//Responsibility: This class is responsible to provide implementation for draw(), inputDimensions, calculateArea(), and calculateVolume().
+//This class doesnot follows the Single Responsibility Principle. 
 {
     private:
         double base;
@@ -23,7 +22,7 @@ class Triangle : public ShapeManager   // This class doesnot follows the Single 
     public:
         
         void draw() override
-        {
+        
             cout << "triangle" << endl;
         }
 

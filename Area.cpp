@@ -1,8 +1,9 @@
 #ifndef Area_cpp
 #define Area_cpp
 
-class Area  // This class follows the Single Responsibility Principle. 
-//This class has a virtual method that is override by child classes to implement their own calculateArea() method. 
+class Area   //Responsibility: This class provides a common interface for calculating Area. 
+// This class follows the Single Responsibility Principle. 
+
 {
 public:
     virtual double calculateArea() = 0;

@@ -7,10 +7,10 @@
 
 using namespace std;
 
-class Rectangle : public ShapeManager // This class doesnot follows the Single Responsibility Principle. 
-//This class overrides methods to "draw a Rectangle" take "input" and then perform task to "calculate area" and "calculate volume".
-//I have suggestion that we create separate classes to override these methods.
-//For example a Rectangle drawer class a Rectangle input class and then a Rectangle volume and a Rectangle area.
+class Rectangle : public ShapeManager 
+//Responsibility: This class is responsible to provide implementation for draw(), inputDimensions, calculateArea(), and calculateVolume().
+//This class doesnot follows the Single Responsibility Principle. 
+
 {
     private:
         double length;

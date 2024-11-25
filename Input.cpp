@@ -1,8 +1,8 @@
 #ifndef Input_cpp
 #define Input_cpp
 
-class Input   // This class follows the Single Responsibility Principle. 
-//This class has a virtual method that is override by child classes to implement their own imputDimensions().
+class Input  //Responsibility: This class provides a common interface for taking input. 
+// This class follows the Single Responsibility Principle.
 {
 public:
     virtual void inputDimensions() = 0;

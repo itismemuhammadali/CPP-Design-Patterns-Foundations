@@ -9,10 +9,10 @@
 #include "ShapeManager.cpp"
 
 using namespace std;
-class Circle : public ShapeManager  // This class doesnot follows the Single Responsibility Principle. 
-//This class overrides methods to "draw a circle" take "input" and then perform task to "calculate area" and "calculate volume".
-//I have suggestion that we create separate classes to override these methods.
-//For example a circle drawer class a circle input class and then a circle volume and a circle area.
+class Circle : public ShapeManager  
+//Responsibility: This class is responsible to provide implementation for draw(), inputDimensions, calculateArea(), and calculateVolume().
+//This class doesnot follows the Single Responsibility Principle. 
+
 {
     private:
         double radius;

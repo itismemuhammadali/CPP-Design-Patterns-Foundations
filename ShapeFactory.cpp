@@ -12,8 +12,9 @@
 
 using namespace std;
 
-class ShapeFactory  // This class follows the Single Responsibility Principle. 
-//This class has the responsibility to create a new object based on user input.
+class ShapeFactory  
+// Responsibility: This class is responsible for creating object based on user input.
+// This class follows the Single Responsibility Principle. 
 {
 
 public:

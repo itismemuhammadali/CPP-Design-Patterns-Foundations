@@ -7,7 +7,8 @@
 #include "Shape.cpp"
 
 class ShapeManager : public Area, public Volume, public Input, public Shape 
-    // This class follows the Single Responsibility Principle. 
+// This class follows the Single Responsibility Principle. 
+// Responsibility: This class is responsible for linking the abstract base classes to the child classes.
 {
     //This class is extending from Area, Volume, Input and Shape to link these classes to its child classes. 
 };

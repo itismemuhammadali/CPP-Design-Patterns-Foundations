@@ -5,8 +5,8 @@
 #include "Volume.cpp"
 #include "Input.cpp"
 
-class Shape  // This class follows the Single Responsibility Principle. 
-//This class has a virtual method that is override by child classes to implement their own draw() method. 
+class Shape  //Responsibility: This class provides a common interface to draw shape. 
+// This class follows the Single Responsibility Principle.
 {
 public:
     virtual void draw() = 0;
