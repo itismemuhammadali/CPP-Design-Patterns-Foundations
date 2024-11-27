@@ -10,8 +10,11 @@
 
 using namespace std;
 class Circle : public Shape
-//Responsibility: This class provides concrete implementation for abstract methods declared in abstract classes shape, Input, Area, and Volume.
-//This class doesnot follows the Single Responsibility Principle. 
+//Responsibilities: 
+// 1 . Drawing the circle.
+// 2 . Taking user's input.
+// 3 . Calculating area and volume of the circle.  
+// This class doesnot follows the Single Responsibility Principle. 
 
 {
     private:

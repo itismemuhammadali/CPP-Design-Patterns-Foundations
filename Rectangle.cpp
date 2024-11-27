@@ -8,7 +8,10 @@
 using namespace std;
 
 class Rectangle : public Shape
-//Responsibility: This class provides concrete implementation for abstract methods declared in abstract classes shape, Input, Area, and Volume.
+//Responsibilities: 
+// 1 . Drawing the rectangle.
+// 2 . Taking user's input.
+// 3 . Calculating area and volume of the rectangle. 
 //This class doesnot follows the Single Responsibility Principle. 
 
 

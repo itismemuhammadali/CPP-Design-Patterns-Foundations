@@ -8,7 +8,10 @@
 using namespace std;
 
 class Square : public Shape  
-//Responsibility: This class provides concrete implementation for abstract methods declared in abstract classes shape, Input, Area, and Volume.
+//Responsibilities: 
+// 1 . Drawing the square.
+// 2 . Taking user's input.
+// 3 . Calculating area and volume of the square.
 //This class doesnot follows the Single Responsibility Principle.  
 
 {
