@@ -12,30 +12,32 @@
 
 using namespace std;
 
-class ShapeFactory
+class ShapeFactory  
+// Responsibility: This class is responsible for creating object based on user input.
+// This class follows the Single Responsibility Principle. 
 {
 
 public:
     static Shape *create(string shapeType)
     {
-        Shape *shapeDrawer = nullptr;
+        Shape *shapeHandler = nullptr;
 
         switch (fromStringtoEnum(shapeType))
         {
         case SQUARE:
-            shapeDrawer = new Square();
+            shapeHandler = new Square();
             break;
 
         case RECTANGLE:
-            shapeDrawer = new Rectangle();
+            shapeHandler = new Rectangle();
             break;
 
         case CIRCLE:
-            shapeDrawer = new Circle();
+            shapeHandler = new Circle();
             break;
 
         case TRIANGLE:
-            shapeDrawer = new Triangle();
+            shapeHandler = new Triangle();
             break;
 
         case INVALID:
@@ -46,7 +48,7 @@ public:
             break;
         }
 
-        return shapeDrawer;
+        return shapeHandler;
     }
 };
 #endif

@@ -1,5 +1,5 @@
-#ifndef Main1_cpp
-#define Main1_cpp
+#ifndef Main_cpp
+#define Main_cpp
 
 #include <iostream>
 
@@ -14,21 +14,22 @@ int main()
     cout << "Enter a Shape" << endl;
     cin >> shapeType;
 
-    Shape *shapeDrawer = ShapeFactory ::create(shapeType);
-    shapeDrawer->inputDimensions();
-    double volume = shapeDrawer->calculateVolume();
-    double area = shapeDrawer->calculateArea();
-
-    if (shapeDrawer)
+    Shape *shapeHandler = ShapeFactory ::create(shapeType);
+    
+    if (shapeHandler)
     {
-        shapeDrawer->draw();
+        shapeHandler->draw();
+        shapeHandler->inputDimensions();
+        double volume = shapeHandler->calculateVolume();
+        double area = shapeHandler->calculateArea();
+
         cout << "Area : " << area << "\n";
         cout << "Volume : " << volume;
-        delete shapeDrawer;
+        delete shapeHandler;
     }
     else
     {
-        cout << "No valid shape selected." << endl;
+        cout << "No valid shape entered." << endl; 
     }
 }
 #endif
