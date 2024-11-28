@@ -9,10 +9,10 @@ using namespace std;
 
 class Triangle : public Shape  
 //Responsibilities:
-// 1 . Drawing the triangle.
-// 2 . Taking user's input.
-// 3 . Calculating area and volume of a triangle.
-//This class doesnot follows the Single Responsibility Principle. 
+// 1 . Drawing the shape .
+// 2 . Taking user's input .
+// 3 . Calculating the computable dimensions .
+//This class doesnot follows the Single Responsibility Principle . 
 {
     private:
         double base;
