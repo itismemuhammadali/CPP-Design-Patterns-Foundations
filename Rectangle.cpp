@@ -7,13 +7,14 @@
 
 using namespace std;
 
-class Rectangle : public Shape
+class Rectangle : public Shape 
+//This class doesnot follows the Single Responsibility Principle . 
 //Responsibilities: 
 // 1 . Drawing the shape .
 // 2 . Taking user's input .
-// 3 . Calculating the computable dimensions . 
-//This class doesnot follows the Single Responsibility Principle . 
+// 3 . Calculating the computable dimensions .
 
+// This class follows the Interface Segregation Principle .
 
 {
     private:

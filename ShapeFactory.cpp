@@ -13,8 +13,13 @@
 using namespace std;
 
 class ShapeFactory  
-// Responsibility: This class is responsible for creating object based on user input.
-// This class follows the Single Responsibility Principle. 
+// This class follows the Single Responsibility Principle . 
+// Responsibility: This class is responsible for creating object based on user input .
+
+// The Interface Segregation Principle will not be applied to this class .
+//Reason :
+// Because it doesnot have any interface to deal with .
+
 {
 
 public:
