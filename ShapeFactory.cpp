@@ -18,7 +18,8 @@ class ShapeFactory
 
 // The Interface Segregation Principle will not be applied to this class .
 //Reason :
-// Because it doesnot have any interface to deal with .
+// Because the class itself is a concrete class 
+// and Interface Segregation Principle only applies to interfaces or abstract classes .
 
 {
 
